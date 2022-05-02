@@ -23,10 +23,8 @@ To contain a custom Python installation for this repo, you can set up the follow
 ```sh
 python3 -m venv env       # Create virtual environment "env"
 source ./env/bin/activate # Activate the created virtual environment
-pip install pyzx          # Install pyzx in the virtual environment
-pip install 'qiskit[visualization]'
-                          # Install qiskit for quantum circuit visualization
 pip install jupyterlab    # Install JupyterLab
+pip install -r requirements.txt # Install pyzx and qiskit
 jupyter-lab               # Start JupyterLab, will open in your default browser
 ```
 
